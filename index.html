@@ -47,8 +47,12 @@ h1{margin:0;font-family:'STXingkai','华文行楷','Zhi Mang Xing',serif;font-we
 
 #about{background:var(--paper2);padding:104px 0}
 .about-inner{display:flex;flex-direction:column;gap:64px}
-.bio{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:72px;align-items:start}
+.bio{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:72px;align-items:center}
 .bio-head{display:flex;flex-direction:column;gap:20px}
+.portrait{margin:0;width:100%;display:flex;flex-direction:column;gap:12px}
+.portrait .mat{background:var(--mat);padding:10px;box-shadow:0 18px 36px rgba(84,52,28,.14)}
+.portrait img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%}
+.portrait figcaption{font-size:13px;letter-spacing:.2em;color:var(--muted)}
 .bio-body{display:flex;flex-direction:column;gap:28px}
 .bio-body p{margin:0;font-size:18px;line-height:2.1;color:#3A2E24}
 .tags{display:flex;flex-wrap:wrap;gap:10px}
@@ -88,7 +92,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 .lb-next{right:12px;top:50%;transform:translateY(-50%)}
 .lb-btn:focus-visible{outline:2px solid var(--paper)}
 
-@media (max-width:1000px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.hero,.bio{grid-template-columns:minmax(0,1fr);gap:40px}.hero-art span{right:8px}}
+@media (max-width:1000px){.portrait{max-width:280px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.hero,.bio{grid-template-columns:minmax(0,1fr);gap:40px}.hero-art span{right:8px}}
 @media (max-width:600px){h1{font-size:88px}h2{font-size:34px}.gallery{grid-template-columns:minmax(0,1fr)}.facts{grid-template-columns:minmax(0,1fr)}nav{display:none}.hero-art img{height:420px}#about{padding:72px 0}#works{padding-top:72px}.lb-prev,.lb-next{display:none}}
 </style>
 </head>
@@ -124,12 +128,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <section id="about">
   <div class="wrap about-inner">
     <div class="bio">
-      <div class="bio-head">
-        <div class="label">ABOUT THE ARTIST</div>
-        <h2>画家简介</h2>
-        <div class="rule"></div>
-      </div>
+      <figure class="portrait">
+        <div class="mat"><img src="images/portrait.jpg" alt="画家曾晓霞肖像"></div>
+        <figcaption>画家 曾晓霞</figcaption>
+      </figure>
       <div class="bio-body">
+        <div class="bio-head">
+          <div class="label">ABOUT THE ARTIST</div>
+          <h2>画家简介</h2>
+          <div class="rule"></div>
+        </div>
         <p>曾晓霞，中国画艺术家，专攻工笔花鸟。民盟中央美术院陕西分院理事，陕西省美术家协会会员，宝鸡中国画院监事，宝鸡美术馆、宝鸡画院特聘画家，宝鸡市工笔画会副会长。</p>
         <div class="tags">
           <span>民盟中央美术院陕西分院理事</span>
