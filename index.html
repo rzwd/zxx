@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>曾晓霞 · 工笔花鸟</title>
+<meta name="description" content="中国画艺术家曾晓霞工笔花鸟画作品展示。">
+<meta property="og:title" content="曾晓霞 · 工笔花鸟">
+<meta property="og:description" content="中国画艺术家曾晓霞工笔花鸟画作品展示。">
+<meta property="og:image" content="images/01-qiufeng-jidu.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Zhi+Mang+Xing&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#9A3B24;--ink:#2B211A;--ink2:#4A3B2E;--ink3:#5E4A38;--muted:#6B5743;--ochre:#8A5A2B;--paper:#F5EDE0;--paper2:#EFE3D0;--mat:#EDE1CE;--tile:#F7F0E4;--line:#C9AE8C}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Noto Serif SC','Songti SC','SimSun',serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding-left:24px;padding-right:24px}
+.label{font-size:14px;letter-spacing:.4em;color:var(--ochre)}
+.rule{width:64px;height:2px;background:var(--accent)}
+h2{margin:0;font-size:44px;font-weight:600;letter-spacing:.16em}
+
+header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:28px;padding-bottom:28px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--ink)}
+.seal{width:34px;height:34px;background:var(--accent);color:var(--paper);display:flex;align-items:center;justify-content:center;font-family:'Ma Shan Zheng',serif;font-size:20px;border-radius:3px}
+.brand b{font-size:17px;letter-spacing:.2em;font-weight:600}
+nav{display:flex;gap:36px;font-size:15px;letter-spacing:.15em}
+nav a{color:var(--ink2);padding:10px 0}
+nav a:hover{color:var(--accent)}
+
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:64px;align-items:center;padding-top:48px;padding-bottom:96px}
+.hero-text{display:flex;flex-direction:column;gap:28px}
+h1{margin:0;font-family:'STXingkai','华文行楷','Zhi Mang Xing',serif;font-weight:400;font-size:120px;line-height:1;letter-spacing:.06em}
+.tagline{margin:0;font-size:26px;line-height:1.6;letter-spacing:.12em;color:var(--ink2)}
+.lede{margin:0;max-width:460px;font-size:16px;line-height:2;color:var(--ink3)}
+.btns{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 28px;font-size:15px;letter-spacing:.2em;border-radius:2px;transition:background .2s,color .2s}
+.btn-solid{background:var(--accent);color:#FBF6EE}
+.btn-solid:hover{background:#7E2E1A}
+.btn-line{border:1px solid #B89A78;color:var(--ink2)}
+.btn-line:hover{border-color:var(--accent);color:var(--accent)}
+.hero-art{position:relative;padding:18px;background:var(--mat);box-shadow:0 30px 60px rgba(84,52,28,.18)}
+.hero-art img{display:block;width:100%;height:560px;object-fit:cover;object-position:50% 18%}
+.hero-art span{position:absolute;right:-14px;bottom:36px;background:var(--paper);padding:12px 10px;writing-mode:vertical-rl;font-size:14px;letter-spacing:.3em;color:var(--ink3);box-shadow:0 6px 18px rgba(84,52,28,.12)}
+
+#about{background:var(--paper2);padding:104px 0}
+.about-inner{display:flex;flex-direction:column;gap:64px}
+.bio{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:72px;align-items:start}
+.bio-head{display:flex;flex-direction:column;gap:20px}
+.bio-body{display:flex;flex-direction:column;gap:28px}
+.bio-body p{margin:0;font-size:18px;line-height:2.1;color:#3A2E24}
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tags span{padding:8px 16px;border:1px solid var(--line);font-size:14px;color:var(--ink3);border-radius:2px}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.fact{background:var(--tile);padding:32px 28px;display:flex;flex-direction:column;gap:12px}
+.fact b{font-size:34px;font-weight:700;color:var(--accent);letter-spacing:.04em}
+.fact b small{font-size:18px;font-weight:600}
+.fact div{font-size:15px;line-height:1.9;color:var(--ink2)}
+
+#works{padding-top:104px;padding-bottom:96px;display:flex;flex-direction:column;gap:56px}
+.works-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.works-head p{margin:0;font-size:15px;color:var(--muted);letter-spacing:.1em}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:40px 28px;align-items:start}
+.card{cursor:zoom-in;border:0;background:none;padding:0;text-align:left;font:inherit;color:inherit;display:flex;flex-direction:column;gap:14px;width:100%}
+.card .mat{background:var(--mat);padding:10px;width:100%}
+.card img{display:block;width:100%;height:auto;transition:transform .35s ease,box-shadow .35s ease}
+.card:hover img{transform:translateY(-4px);box-shadow:0 18px 36px rgba(84,52,28,.22)}
+.card:focus-visible{outline:2px solid var(--accent);outline-offset:6px}
+.cap{display:flex;flex-direction:column;gap:6px}
+.cap b{font-size:18px;font-weight:600;letter-spacing:.12em;color:var(--ink)}
+.cap span{font-size:13px;letter-spacing:.08em;color:var(--muted)}
+.cap .size{color:var(--ochre)}
+
+footer{border-top:1px solid #DCC8AC;padding:40px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;letter-spacing:.1em;color:var(--muted)}
+
+.lightbox{position:fixed;inset:0;z-index:50;background:rgba(36,26,18,.92);display:none;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:24px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:100%;max-height:calc(100vh - 140px);object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.lb-cap{color:var(--paper);text-align:center;display:flex;flex-direction:column;gap:6px}
+.lb-cap b{font-size:20px;font-weight:400;letter-spacing:.16em}
+.lb-cap span{font-size:13px;letter-spacing:.08em;color:#D9C7AE}
+.lb-btn{position:absolute;width:48px;height:48px;border:0;background:transparent;color:var(--paper);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.lb-close{top:16px;right:16px}
+.lb-prev{left:12px;top:50%;transform:translateY(-50%)}
+.lb-next{right:12px;top:50%;transform:translateY(-50%)}
+.lb-btn:focus-visible{outline:2px solid var(--paper)}
+
+@media (max-width:1000px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.hero,.bio{grid-template-columns:minmax(0,1fr);gap:40px}.hero-art span{right:8px}}
+@media (max-width:600px){h1{font-size:88px}h2{font-size:34px}.gallery{grid-template-columns:minmax(0,1fr)}.facts{grid-template-columns:minmax(0,1fr)}nav{display:none}.hero-art img{height:420px}#about{padding:72px 0}#works{padding-top:72px}.lb-prev,.lb-next{display:none}}
+</style>
+</head>
+<body>
+
+<header class="wrap" id="top">
+  <a class="brand" href="#top"><span class="seal">霞</span><b>曾晓霞</b></a>
+  <nav>
+    <a href="#about">画家简介</a>
+    <a href="#works">代表作品</a>
+  </nav>
+</header>
+
+<main>
+<section class="wrap hero">
+  <div class="hero-text">
+    <div class="label">中国画 · 工笔花鸟</div>
+    <h1>曾晓霞</h1>
+    <p class="tagline">鸟语花香 · 四时清趣</p>
+    <div class="rule"></div>
+    <p class="lede">以细笔勾勒、层层渲染，描绘银杏、牡丹、荷塘与栖禽，在一花一羽之间留住季节的温度。</p>
+    <div class="btns">
+      <a class="btn btn-solid" href="#works">浏览作品</a>
+      <a class="btn btn-line" href="#about">画家简介</a>
+    </div>
+  </div>
+  <div class="hero-art">
+    <img src="images/01-qiufeng-jidu.jpg" alt="曾晓霞《秋风几度》局部，银杏落叶中栖息的大雁">
+    <span>秋风几度 · 局部</span>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-inner">
+    <div class="bio">
+      <div class="bio-head">
+        <div class="label">ABOUT THE ARTIST</div>
+        <h2>画家简介</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="bio-body">
+        <p>曾晓霞，中国画艺术家，专攻工笔花鸟。民盟中央美术院陕西分院理事，陕西省美术家协会会员，宝鸡中国画院监事，宝鸡美术馆、宝鸡画院特聘画家，宝鸡市工笔画会副会长。</p>
+        <div class="tags">
+          <span>民盟中央美术院陕西分院理事</span>
+          <span>陕西省美术家协会会员</span>
+          <span>宝鸡中国画院监事</span>
+          <span>宝鸡美术馆特聘画家</span>
+          <span>宝鸡画院特聘画家</span>
+          <span>宝鸡市工笔画会副会长</span>
+        </div>
+      </div>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>1997</b><div>2月，于宝鸡市春雪画廊举办个人画展</div></div>
+      <div class="fact"><b>2017</b><div>1月，于宝鸡展览馆举办《鸟语花香》曾晓霞工笔花鸟画展</div></div>
+      <div class="fact"><b>300<small> 余幅</small></b><div>作品参加国家及省市级大赛，并多次获奖</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="works" class="wrap">
+  <div class="works-head">
+    <div class="bio-head">
+      <div class="label">SELECTED WORKS</div>
+      <h2>代表作品</h2>
+      <div class="rule"></div>
+    </div>
+    <p>点击作品查看大图</p>
+  </div>
+  <div class="gallery" id="gallery"></div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>曾晓霞 · 工笔花鸟画</span>
+    <span>作品版权归作者所有</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="作品大图">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="关闭"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="上一幅"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="下一幅"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+  <img id="lbImg" src="" alt="">
+  <div class="lb-cap"><b id="lbTitle"></b><span id="lbMeta"></span></div>
+</div>
+
+<script>
+const works = [
+  { src: 'images/01-qiufeng-jidu.jpg',   title: '秋风几度',         size: '69 × 138 cm', subject: '银杏 · 大雁',       year: '乙巳年' },
+  { src: 'images/02-yuexia-shaoyao.jpg', title: '月下芍药图',       size: '50 × 50 cm',  subject: '芍药 · 明月',       year: '' },
+  { src: 'images/03-guyu-shijie.jpg',    title: '谷雨时节春正浓',   size: '97 × 180 cm', subject: '绣球 · 野鸭',       year: '乙巳年春' },
+  { src: 'images/04-tonghua-qique.jpg',  title: '桐花栖雀图',       size: '69 × 138 cm', subject: '桐花 · 山雀',       year: '' },
+  { src: 'images/05-qinghui-youyou.jpg', title: '清晖悠悠',         size: '69 × 138 cm', subject: '鸳鸯 · 水草',       year: '戊戌年' },
+  { src: 'images/06-yuguo-qiutang.jpg',  title: '雨过秋塘鸟弄倩影', size: '98 × 180 cm', subject: '秋塘 · 水鸟',       year: '' },
+  { src: 'images/07-qingri.jpg',         title: '晴日',             size: '69 × 138 cm', subject: '冬树 · 白鸽',       year: '乙巳年冬月' },
+  { src: 'images/08-hetang-qingqu.jpg',  title: '荷塘清趣',         size: '69 × 138 cm', subject: '白鹭 · 荷花 · 翠鸟', year: '癸卯春月' }
+];
+const meta = w => (w.year ? w.subject + '　' + w.year : w.subject);
+
+const gallery = document.getElementById('gallery');
+works.forEach((w, i) => {
+  const b = document.createElement('button');
+  b.className = 'card';
+  b.setAttribute('aria-label', '查看大图：' + w.title);
+  b.innerHTML =
+    '<div class="mat"><img loading="lazy" src="' + w.src + '" alt="' + w.title + '，' + w.subject + '"></div>' +
+    '<div class="cap"><b>' + w.title + '</b><span>' + meta(w) + '</span><span class="size">' + w.size + '</span></div>';
+  b.addEventListener('click', () => openLb(i));
+  gallery.appendChild(b);
+});
+
+const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lbImg'),
+      lbTitle = document.getElementById('lbTitle'), lbMeta = document.getElementById('lbMeta');
+let cur = -1, lastFocus = null;
+function show(i) {
+  cur = (i + works.length) % works.length;
+  const w = works[cur];
+  lbImg.src = w.src; lbImg.alt = w.title;
+  lbTitle.textContent = w.title;
+  lbMeta.textContent = meta(w) + '　' + w.size;
+}
+function openLb(i) { lastFocus = document.activeElement; show(i); lb.classList.add('open'); document.body.style.overflow = 'hidden'; document.getElementById('lbClose').focus(); }
+function closeLb() { lb.classList.remove('open'); document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); }
+document.getElementById('lbClose').addEventListener('click', closeLb);
+document.getElementById('lbPrev').addEventListener('click', () => show(cur - 1));
+document.getElementById('lbNext').addEventListener('click', () => show(cur + 1));
+lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+document.addEventListener('keydown', e => {
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLb();
+  else if (e.key === 'ArrowLeft') show(cur - 1);
+  else if (e.key === 'ArrowRight') show(cur + 1);
+});
+</script>
+</body>
+</html>
